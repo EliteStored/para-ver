@@ -1,0 +1,124 @@
+/*Selector Universal*/
+*{color: black;}
+
+/*metodo de etiqueta predeterminada*/
+h1{
+    color:aquamarine;
+    background-color: aqua;
+    font-size: 40px;
+
+}
+/*metodo de etiqueta inventada*/
+v{
+    color: black;
+    font-size:30px;
+}
+/* metodo de ID*/
+#bobo{
+color: aqua;
+font-size: 35xp;
+}
+/*Metodo con class*/
+.Nose{
+    color: brown;
+    background-color: azure;
+}
+/*Metodo atributo*/
+[href]{
+    color:aquamarine
+}
+/*Metodo atributo value*/
+[class="Nose"]{
+    color: yellowgreen;
+}
+/*Metodo atributo, prefijo del value*/
+[href^="https"]{
+    color: palevioletred;
+}
+/*Metodo atributo, sufijo del value*/
+[href$=".net"]{
+    color:orange
+}
+/*Metodo atributo que al menos contenga esa combinacion de letras en el Value*/
+[href*="FC"]{
+    color: green;
+}
+/*Metodo atributo que contenga este palabra pero separada por espacios en el value*/
+[class~="FC"]{
+    color: brown;
+}
+/*Metodo atriubto que el valio sea exactamente igual o inicie con este separado por un guíon*/
+[class|="FC"]{
+    color: beige;
+}
+/*Metodo de combinar decendencia*/
+#Prueba ul{
+    color: aquamarine;
+}
+/*Metodo de combinar hijo directo*/
+#Prueba>ul{
+    color: azure;
+}
+/*Metodo unificador uniersa (solo funciona con hijos)*/
+#Prueba *{
+    color: aquamarine;
+}
+/*Metodo unificador hermano adeyacente*/
+#Prueba+#Pues{
+    color: beige;
+}
+/*Metodo unificador de hermanos*/
+#Prueba~p{
+    color: blueviolet;
+}
+/*Juntar varios elementos*/
+#mmm,
+.rop{
+    color: azure;
+}
+/*Ser especifico*/
+hi.rop{
+    color: beige;
+}
+.htres{
+        font-size: 1.17em; /* Tamaño de fuente */
+        font-weight: bold; /* Grosor de la fuente */
+        margin-top: 1em; /* Margen superior */
+        margin-bottom: 1em; /* Margen inferior */
+}
+/*Variable*/
+.class{
+    --color: blue
+    color:var(--color);
+}
+/*important*/
+.ariele{
+    color: aqua;
+    font-size: 35px !important;
+}
+/*Variable universal*/
+html{
+    --colore: blue;
+    --font: 35px;
+}
+/*Variable universal con especificidad de clase*/
+:root{
+    --coloree: green
+    fotes: 30px;
+}
+/*Simbolos de unidades de medida de css*/
+.circulo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/*Quiero heredar*/
+.ab{
+    color: inherit
+}
+/*No quiero heredar*/
+.ac{
+    color: initial;
+    font-size: 120%;
+}
